@@ -14,9 +14,8 @@ $sql = "SELECT COUNT(*) FROM users";
 $result = $dbs->query($sql);
 
 while($row = $result->fetch_assoc()){
-    echo $row;
+    echo $row['COUNT(*)'];
 }
-
 
 $dbs->close();
 ?>
